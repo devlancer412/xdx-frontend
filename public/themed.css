@@ -1,0 +1,29 @@
+:root:not(.theme-light) {
+  --tv-color-toolbar-button-background-hover: transparent;
+  --tv-color-toolbar-button-background-secondary-hover: red;
+  /* --tv-color-toolbar-button-background-expanded: rgb(244, 143, 177); */
+  --tv-color-toolbar-button-text: #48565d;
+  --tv-color-toolbar-button-text-hover: #4f46e5;
+  --tv-color-toolbar-button-text-active: #4f46e5;
+  --tv-color-toolbar-button-text-active-hover: #4f46e5;
+  --tv-color-item-active-text: #4f46e5;
+
+  --tv-color-pane-background: #181e2b;
+  --tv-color-platform-background: #1e293b;
+
+  --tv-color-toolbar-toggle-button-background-active: #525358 !important;
+  --tv-color-toolbar-toggle-button-background-active-hover: #36373b !important;
+}
+
+html.theme-dark .chart-page .chart-container-border {
+  background-color: #1e293b !important;
+}
+/* 
+.chart-container {
+  filter: saturate(1.0) brightness(1.13) hue-rotate(355deg);
+} */
+
+.sources-1WIwNaDF {
+  display: none;
+}
+

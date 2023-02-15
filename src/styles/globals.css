@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    height: 100%;
+    background-color: #181e2b !important;
+  }
+  body {
+    height: 100%;
+  }
+
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+/* 
+  ::-webkit-scrollbar {
+    display: none;
+  } */
+
+  
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    /* border-radius: 100vh; */
+    background: #13192470;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 100vh;
+  }
+/* 
+  ::-webkit-scrollbar-thumb:hover {
+    background: #131924;
+  } */
+
+}
+
+html.theme-dark #widget-container {
+  border-color: #1e293b !important;
+  border-radius: 0px !important;
+}
+
+#widget-container {
+  border: 0px solid #d9dadb !important;
+  border-radius: 0px !important;
+  box-sizing: border-box;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+html.theme-dark .chart-page {
+  background-color: #181e2b !important;
+}
+
+#trading_view_custom_container {
+  position: relative;
+  top: -1px !important;
+  left: -1px !important;
+  width: calc(100% + 2px) !important;
+  height: calc(100% + 2px) !important;
+  clip-path: polygon(1px 1px, calc(100% - 1px) 1px, calc(100% - 1px) calc(100% - 1px), 1px calc(100% - 1px));
+  overflow: hidden;
+}
+
+.rtl-grid {
+  direction: rtl;
+}
+
+@keyframes bouncing-loader {
+  to {
+    opacity: 0.1;
+    transform: translate3d(0, -1.6rem, 0);
+  }
+}
+
+.bouncing-loader {
+  display: flex;
+  justify-content: center;
+}
+
+.bouncing-loader > div {
+  width: 1.6rem;
+  height: 1.6rem;
+  margin: 4.65rem 0.31rem;
+  background: #8385aa;
+  border-radius: 50%;
+  animation: bouncing-loader 0.6s infinite alternate;
+}
+
+.bouncing-loader > div:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.bouncing-loader > div:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.zoomIn {
+  animation: zoomIn 0.2s ease-in-out;
+  animation-fill-mode: forwards;
+}
+.zoomOut {
+  animation: zoomOut 0.2s ease-in-out;
+  animation-fill-mode: forwards;
+}

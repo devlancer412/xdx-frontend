@@ -1,0 +1,126 @@
+.Toastify {
+  font-size: 14px;
+}
+
+.Toastify__toast {
+  min-height: 46.5px;
+  cursor: default;
+}
+
+.Toastify__toast-body {
+  padding: 0 4.65px;
+}
+
+.Toastify-debug {
+  margin-top: 4.65px;
+  font-size: 12.4px;
+  opacity: 0.7;
+}
+
+.Toastify-debug-button {
+  display: inline-block;
+  border-bottom: 1px dashed;
+  cursor: pointer;
+}
+
+.Toastify-debug-content {
+  margin-top: 4px;
+  padding-bottom: 8px;
+  max-width: 300px;
+  overflow-x: auto;
+}
+
+.Toastify__toast--error {
+  background: #131924;
+  color: white;
+  border-radius: 6px;
+}
+
+.Toastify__toast--success {
+  background: transparent linear-gradient(90deg, #19836c 0%, #177c66 100%) 0% 0% no-repeat padding-box;
+  color: white;
+  box-shadow: 0px 3px 6px #0000005c;
+  border-radius: 4px;
+}
+
+.Toastify__close-button {
+  align-self: flex-start;
+  border-radius: 4px;
+  width: 21px;
+  min-width: 21px;
+  height: 20px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: none;
+}
+
+.Toastify__close-button:hover {
+  background: #ffffff47 0% 0% no-repeat padding-box;
+}
+
+.Toastify__toast-body {
+  font: normal normal normal 14px/16px Relative;
+  line-height: 20px;
+}
+
+.App-slider .rc-slider-rail {
+  background: linear-gradient(90deg, rgba(30, 34, 61, 1) 0%, rgba(40, 45, 74, 1) 100%);
+}
+
+.App-slider .rc-slider-track {
+  @apply bg-indigo-500
+}
+
+.App-slider .rc-slider-dot {
+  border: none;
+  border-radius: 1px;
+  width: 2px;
+  margin-left: -1px;
+  background: rgba(40, 45, 74, 1);
+}
+
+.App-slider .rc-slider-dot-active {
+  @apply bg-indigo-500
+}
+
+.App-slider .rc-slider-handle {
+  @apply bg-[#303652] border-2 border-indigo-500;
+}
+
+.App-slider .rc-slider-handle:active {
+  box-shadow: 0 0 0.4rem 0.6rem rgba(45, 66, 252, 0.2);
+}
+
+.App-slider .rc-slider-mark-text,
+.App-slider .rc-slider-mark-text-active {
+  @apply text-slate-400 hover:text-slate-200
+}
+
+.App-slider .rc-slider-mark-text,
+.App-slider .rc-slider-mark-text-active {
+  &:first-child {
+    transform: translateX(-10%) !important
+  }
+  &:last-child {
+    transform: translateX(-90%) !important
+  }
+}
+
+.rc-slider-tooltip {
+  z-index: 5;
+}
+
+.rc-slider-tooltip-inner {
+  box-shadow: none;
+  padding: 0.465rem 0.8rem;
+  background: #303652;
+}
+
+.rc-slider-tooltip-placement-top .rc-slider-tooltip-arrow {
+  border-top-color: #303652;
+}
+
+html #widget-container {
+  border-width: 0;
+}
